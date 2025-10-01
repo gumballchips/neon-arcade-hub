@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon HTML Arcade Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🌌 Neon Arcade Hub 🌌</h1>
+</header>
+
+<main>
+  <section id="add-game">
+    <h2>Add New Game</h2>
+    <input type="text" id="game-name" placeholder="Game Name">
+    <input type="text" id="game-link" placeholder="Game HTML File URL">
+    <input type="text" id="game-thumb" placeholder="Thumbnail URL (optional)">
+    <button onclick="addGame()">Add Game</button>
+  </section>
+
+  <section id="game-grid">
+    <h2>Game Grid</h2>
+    <div id="grid-container"></div>
+  </section>
+
+  <section id="game-display">
+    <h2>Game Window</h2>
+    <iframe id="game-frame" src="" frameborder="0"></iframe>
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
